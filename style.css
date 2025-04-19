@@ -1,133 +1,141 @@
-/* Reset básico para garantir consistência entre os navegadores */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Estilo geral para o corpo */
-body {
-    background-color: #f4f4f4;
+  }
+  
+  /* Tipografia e cor base */
+  body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #333;
-    padding: 10px;
-}
-
-/* Estilo do header */
-header {
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #1e3a5f;
+    color: white;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.titulo h1 {
-    font-size: 36px;
-    color: #ecf0f1;
-    word-wrap: break-word;
-}
-
-/* Estilo do conteúdo principal */
-main {
+    padding: 20px 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Main */
+  main {
     width: 100%;
     max-width: 1000px;
-    padding: 20px;
     background-color: #fff;
-    margin-top: 20px;
+    padding: 30px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo da seção de texto */
-.texto1 p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+  
+  article h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: #1e3a5f;
+  }
+  
+  article h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #2c3e50;
+  }
+  
+  article p, article li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
     color: #555;
-}
-
-/* Estilo do footer */
-footer {
+  }
+  
+  ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  
+  /* Imagens dentro do conteúdo */
+  figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Footer */
+  footer {
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #1e3a5f;
     color: #ecf0f1;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-/* Responsividade */
-@media (max-width: 1200px) {
-    .titulo h1 {
-        font-size: 30px;
+    padding: 12px;
+    font-size: 0.9rem;
+    border-top: 4px solid #16324f;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
     }
-
-    .texto1 p {
-        font-size: 17px;
+  
+    article h2 {
+      font-size: 1.5rem;
     }
-}
-
-@media (max-width: 1024px) {
-    .titulo h1 {
-        font-size: 28px;
+  
+    article h3 {
+      font-size: 1.2rem;
     }
-
-    .texto1 p {
-        font-size: 16px;
+  
+    article p, article li {
+      font-size: 1rem;
     }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    .titulo h1 {
-        font-size: 24px;
-    }
-
-    .texto1 p {
-        font-size: 15px;
-    }
-
+  
     main {
-        width: 90%;
-        padding: 15px;
+      padding: 20px 15px;
     }
-
-    footer {
-        padding: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
     }
-}
-
-@media (max-width: 480px) {
-    .titulo h1 {
-        font-size: 20px;
+  
+    article p, article li {
+      font-size: 0.95rem;
     }
-
-    .texto1 p {
-        font-size: 14px;
-    }
-
-    main {
-        width: 95%;
-        padding: 10px;
-    }
-
-    footer {
-        padding: 6px;
-    }
-}
+  }
+  
