@@ -84,7 +84,7 @@
   }
   
   figure img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     border-radius: 6px;
   }
